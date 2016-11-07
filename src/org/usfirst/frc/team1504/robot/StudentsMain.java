@@ -4,24 +4,29 @@ import org.usfirst.frc.team1504.robot.Update_Semaphore.Updatable;
 
 import edu.wpi.first.wpilibj.DoubleSolenoid;
 
-public class StudentsMain implements Updatable {
+public class StudentsMain extends Latch_Joystick implements Updatable {
+
+	//lol idk what to do with this part
+	public StudentsMain(int port) {
+		super(port);
+		// TODO Auto-generated constructor stub
+	}
 
 	@Override
 	public void semaphore_update() {
 		// TODO Auto-generated method stub
-		int value;
-		int value2;
+		boolean value1;
+		boolean value2;
 		DoubleSolenoid ProjectSolenoid = new DoubleSolenoid(1, 2);
-		getRawButtonLatch(4);
-		//How do you use the value it returns
-		//Is the input thing thats inside the parenthases the port #?
-		if (value == 1)
-		{
+		//getRawButtonLatch(4);
+		//Is the input thing thats inside the parentheses the port #?
+		value1 = getRawButtonLatch(4);
+		if (value1 == true){
 			ProjectSolenoid.set(DoubleSolenoid.Value.kForward);
 		}
-		getRawButtonLatch(5);
-		if (value2 == 1)
-		{
+		//getRawButtonLatch(5);
+		value2 = getRawButtonLatch(5);
+		if (value2 == true){
 			ProjectSolenoid.set(DoubleSolenoid.Value.kReverse);
 		}
 	}
@@ -40,4 +45,3 @@ I don't know what i'm doing... - Alex
 
 
 
-*/
