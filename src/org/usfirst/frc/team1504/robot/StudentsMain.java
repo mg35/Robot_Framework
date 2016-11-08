@@ -47,7 +47,7 @@ Hello World! I'm cool - Eric
 I don't know what i'm doing... - Alex
 
 //Questions
- Is there a more explicit example of this code I can look at? - Alex
+ Is there a more erotic example of this code I can look at? - Alex
  */
 
 
