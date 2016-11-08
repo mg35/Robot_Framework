@@ -6,6 +6,7 @@ import edu.wpi.first.wpilibj.DoubleSolenoid;
 
 public class StudentsMain extends Latch_Joystick implements Updatable {
 
+	
 	//lol idk what to do with this part
 	public StudentsMain(int port) {
 		super(port);
@@ -14,19 +15,24 @@ public class StudentsMain extends Latch_Joystick implements Updatable {
 
 	@Override
 	public void semaphore_update() {
+		Latch_Joystick _drive_forward = new Latch_Joystick(3);
 		// TODO Auto-generated method stub
 		boolean value1;
 		boolean value2;
 		DoubleSolenoid ProjectSolenoid = new DoubleSolenoid(1, 2);
 		//getRawButtonLatch(4);
 		//Is the input thing thats inside the parentheses the port #?
-		value1 = getRawButtonLatch(4);
+		//value1 = getRawButtonLatch(4);
+		value1 = _drive_forward.getRawButton(4);
+		value2 = _drive_forward.getRawButton(5);
 		if (value1 == true){
+			value2 = false;
 			ProjectSolenoid.set(DoubleSolenoid.Value.kForward);
 		}
 		//getRawButtonLatch(5);
-		value2 = getRawButtonLatch(5);
+		//value2 = getRawButtonLatch(5);
 		if (value2 == true){
+			value1 = false;
 			ProjectSolenoid.set(DoubleSolenoid.Value.kReverse);
 		}
 	
@@ -41,7 +47,7 @@ Hello World! I'm cool - Alex
 I don't know what i'm doing... - Alex
 
 //Questions
- Where is a more explicit example of this code I can look at? - Alex
+ Is there a more explicit example of this code I can look at? - Alex
  */
 
 
