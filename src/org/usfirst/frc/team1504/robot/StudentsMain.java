@@ -40,6 +40,14 @@ public class StudentsMain extends Latch_Joystick implements Updatable {
 }
 //where the main stuff is.
 //
+/*	1.) Record the input of the button
+		a.) call upon thy Latch_Joystick.java
+		b.) take the direct input from the joystick button
+	2.) Send the input to the soleniod
+		a.) route the button's imput to the soleniod
+	3.) Extend the soleniod.
+		a.) when a true value for the taoggle is detected, extend the soleniod
+*/
 /*For lack of knowledge of how to actually do this
 write your thoughts/ideas here.
  
