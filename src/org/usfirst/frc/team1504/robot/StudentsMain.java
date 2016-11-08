@@ -29,6 +29,8 @@ public class StudentsMain extends Latch_Joystick implements Updatable {
 		if (value2 == true){
 			ProjectSolenoid.set(DoubleSolenoid.Value.kReverse);
 		}
+	
+	system.out.println("Moo!")
 	}
 }
 //where the main stuff is.
