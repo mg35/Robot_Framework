@@ -39,7 +39,7 @@ public class StudentsMain extends Latch_Joystick implements Updatable {
 	}
 }
 //where the main stuff is.
-//
+
 /*	1.) Record the input of the button
 		a.) call upon thy Latch_Joystick.java
 		b.) take the direct input from the joystick button
