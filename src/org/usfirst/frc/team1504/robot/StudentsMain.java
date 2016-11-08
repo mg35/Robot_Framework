@@ -43,7 +43,7 @@ public class StudentsMain extends Latch_Joystick implements Updatable {
 /*For lack of knowledge of how to actually do this
 write your thoughts/ideas here.
  
-Hello World! I'm cool - Alex
+Hello World! I'm cool - Eric
 I don't know what i'm doing... - Alex
 
 //Questions
