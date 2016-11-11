@@ -25,16 +25,18 @@ public class StudentsMain extends Latch_Joystick implements Updatable {
 		//value1 = getRawButtonLatch(4);
 		value1 = _drive_forward.getRawButton(4);
 		value2 = _drive_forward.getRawButton(5);
-		if (value1 == true){
+		do {
 			value2 = false;
 			ProjectSolenoid.set(DoubleSolenoid.Value.kForward);
 		}
+		 while (value1 == true);
 		//getRawButtonLatch(5);
 		//value2 = getRawButtonLatch(5);
-		if (value2 == true){
+		do {
 			value1 = false;
 			ProjectSolenoid.set(DoubleSolenoid.Value.kReverse);
 		}
+		 while (value2 == true);
 	
 	}
 }
