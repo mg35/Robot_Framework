@@ -1,0 +1,32 @@
+package org.usfirst.frc.team1504.robot;
+
+import org.usfirst.frc.team1504.robot.Update_Semaphore.Updatable;
+
+import edu.wpi.first.wpilibj.DoubleSolenoid;
+
+public class StudentsMain implements Updatable {
+
+
+	@Override
+	public void semaphore_update() {
+	
+		}
+	
+	}
+}
+//where the main stuff is.
+//
+/*	1.) Record the input of the button
+		a.) call upon thy Latch_Joystick.java
+		b.) take the direct input from the joystick button
+	2.) Send the input to the soleniod
+		a.) route the button's imput to the soleniod
+	3.) Extend the soleniod.
+		a.) when a true value for the taoggle is detected, extend the soleniod
+*/
+/*For lack of knowledge of how to actually do this
+write your thoughts/ideas here.
+We don't know what we're doing... -Everyone who isn't helping
+//Questions
+ Is there a more detailed example of this code I can look at? - Alex
+ */
