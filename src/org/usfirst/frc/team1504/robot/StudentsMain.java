@@ -19,7 +19,7 @@ public class StudentsMain extends Latch_Joystick implements Updatable {
 		// TODO Auto-generated method stub
 		boolean value1;
 		boolean value2;
-		DoubleSolenoid ProjectSolenoid = new DoubleSolenoid(PNEUMATICS_PISTON_PORT_ONE,PNEUMATICS_PISTON_PORT_TWO);
+		DoubleSolenoid ProjectSolenoid = new DoubleSolenoid(Map.PNEUMATICS_PISTON_PORT_ONE,Map.PNEUMATICS_PISTON_PORT_TWO);
 		//getRawButtonLatch(4);
 		//Is the input thing thats inside the parentheses the port #?
 		//value1 = getRawButtonLatch(4);
