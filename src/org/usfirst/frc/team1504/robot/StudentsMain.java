@@ -54,7 +54,7 @@ write your thoughts/ideas here.
 We don't know what we're doing... -Everyone who isn't helping
 
 //Questions
- Is there a more detailed example of this code we can look at? - People who are helping
+ Is there a more detailed example of this code I can look at? - Alex
  */
 
 
