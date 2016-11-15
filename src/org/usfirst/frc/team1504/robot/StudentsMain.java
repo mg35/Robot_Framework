@@ -10,26 +10,27 @@ public class StudentsMain implements Updatable {
 
 	@Override
 	public void semaphore_update() {
-		Latch_Joystick _drive_forward = new Latch_Joystick(3);
+		//Latch_Joystick _drive_forward = new Latch_Joystick(3);
 		// TODO Auto-generated method stub
 		boolean value1;
-		boolean value2;
-		DoubleSolenoid ProjectSolenoid = new DoubleSolenoid(Map.PNEUMATICS_PISTON_PORT_ONE,Map.PNEUMATICS_PISTON_PORT_TWO);
+		//boolean value2;
+		DoubleSolenoid ProjectSolenoid = new DoubleSolenoid(Map.STUDENTS_MAIN_PISTON_PORT_ONE,Map.STUDENTS_MAIN_PISTON_PORT_TWO);
 		//getRawButtonLatch(4);
 		//Is the input thing thats inside the parentheses the port #?
 		//value1 = getRawButtonLatch(4);
-		value1 = _drive_forward.getRawButton(4);
-		value2 = _drive_forward.getRawButton(5);
-		if (value1 == true){
-			value2 = false;
+		//value1 = _drive_forward.getRawButton(4);
+		//value2 = _drive_forward.getRawButton(5);
+		//IO.JOYSTICKEXTEND(value1);
+		if (IO.JOYSTICKEXTEND() == true){
+			//value2 = false;
 			ProjectSolenoid.set(DoubleSolenoid.Value.kForward);
 		}
 		//getRawButtonLatch(5);
 		//value2 = getRawButtonLatch(5);
-		if (value2 == true){
+	/*	if (value2 == true){
 			value1 = false;
 			ProjectSolenoid.set(DoubleSolenoid.Value.kReverse);
-		}
+		}*/
 	
 	}
 }
