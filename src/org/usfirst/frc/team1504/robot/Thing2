@@ -9,7 +9,22 @@ public class StudentsMain extends Latch_Joystick.java implements Updatable {
 
 	@Override
 	public void semaphore_update() {
-		 Latch_Joystick
+	 	Latch_Joystick button1 = new Latch_Joystick(3);
+		
+		DoubleSolenoid ProjectSolenoid = new DoubleSolenoid(Map.STUDENTS_PISTON_PORT_ONE,Map.PNEUMATICS_PISTON_PORT_TWO);
+		
+		boolean value1 = button1.getRawButtonLatch(4);
+		boolean value2 = button1.getRawButtonLatch(5);
+		
+		if (value1 == true) {
+			value2 = false;
+			ProjectSolenoid.set(DoubleSolenoid.Value.kForward);
+		}
+		
+		if (value2 == true) {
+			value1 = false;
+			ProjectSolenoid.set(DoubleSolenoid.Value.kReverse);
+		}
 		}
 	
 	}
@@ -22,7 +37,7 @@ public class StudentsMain extends Latch_Joystick.java implements Updatable {
 	2.) Send the input to the soleniod
 		a.) route the button's imput to the soleniod
 	3.) Extend the soleniod.
-		a.) when a true value for the taoggle is detected, extend the soleniod
+		a.) when a true value for the toggle is detected, extend the soleniod
 */
 /*For lack of knowledge of how to actually do this
 write your thoughts/ideas here.
