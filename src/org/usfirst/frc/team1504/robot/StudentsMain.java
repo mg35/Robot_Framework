@@ -14,7 +14,7 @@ public class StudentsMain implements Updatable {
 		// TODO Auto-generated method stub
 		boolean value1;
 		boolean value2;
-		DoubleSolenoid ProjectSolenoid = new DoubleSolenoid(1, 2);
+		DoubleSolenoid ProjectSolenoid = new DoubleSolenoid(Map.PNEUMATICS_PISTON_PORT_ONE,Map.PNEUMATICS_PISTON_PORT_TWO);
 		//getRawButtonLatch(4);
 		//Is the input thing thats inside the parentheses the port #?
 		//value1 = getRawButtonLatch(4);
@@ -45,12 +45,20 @@ public class StudentsMain implements Updatable {
 */
 /*For lack of knowledge of how to actually do this
 write your thoughts/ideas here.
+<<<<<<< HEAD
  
 Hello World! I'm cool - Eric
 I don't know what i'm doing... - Alex
 //Questions
  Is there a more explicit example of this code I can look at? - Alex
  keep it pg 13 people
+=======
+
+We don't know what we're doing... -Everyone who isn't helping
+
+//Questions
+ Is there a more detailed example of this code I can look at? - Alex
+>>>>>>> origin/Students
  */
 
 
