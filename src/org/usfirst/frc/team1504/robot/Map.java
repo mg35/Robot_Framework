@@ -15,8 +15,8 @@ public class Map {
 	public static final int DRIVE_POLAR_JOYSTICK = 1;
 	
 	public static final int STUDENTS_MAIN_DRIVE_FORWARD = 3;
-	public static final int PISTON_EXTEND = 4;
-	public static final int PISTON_RETRACT = 5
+	public static final int STUDENTS_MAIN_PISTON_EXTEND = 4;
+	public static final int STUDENTS_MAIN_PISTON_RETRACT = 5;
 	
 	// Joystick inputs
 	
