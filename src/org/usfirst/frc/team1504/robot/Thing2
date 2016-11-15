@@ -4,12 +4,12 @@ import org.usfirst.frc.team1504.robot.Update_Semaphore.Updatable;
 
 import edu.wpi.first.wpilibj.DoubleSolenoid;
 
-public class StudentsMain implements Updatable {
+public class StudentsMain extends Latch_Joystick.java implements Updatable {
 
 
 	@Override
 	public void semaphore_update() {
-	
+		 Latch_Joystick
 		}
 	
 	}
