@@ -32,9 +32,9 @@ public class IO
 	public static void TOBENAMED() {
 		boolean value1;
 		boolean value2;
-		Latch_Joystick _drive_forward = new Latch_Joystick(a);
-		value1 = _drive_forward.getRawButton(b);
-		value2 = _drive_forward.getRawButton(c);
+		Latch_Joystick _drive_forward = new Latch_Joystick(Map.STUDENTS_MAIN_DRIVE_FORWARD);
+		value1 = _drive_forward.getRawButton(Map.PISTON_EXTEND);
+		value2 = _drive_forward.getRawButton(Map.PISTON_RETRACT);
 		if (value1 == true){
 			value2 = false;
 			ProjectSolenoid.set(DoubleSolenoid.Value.kForward);
