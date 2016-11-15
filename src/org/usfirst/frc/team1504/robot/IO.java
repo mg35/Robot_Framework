@@ -28,5 +28,22 @@ public class IO
 	{
 		return (_drive_rotation.getRawButton(4) ? -1.0 : 0.0) + (_drive_rotation.getRawButton(5) ? 1.0 : 0.0);
 	}
-
+	
+	public static void TOBENAMED() {
+		boolean value1;
+		boolean value2;
+		Latch_Joystick _drive_forward = new Latch_Joystick(a);
+		value1 = _drive_forward.getRawButton(b);
+		value2 = _drive_forward.getRawButton(c);
+		if (value1 == true){
+			value2 = false;
+			ProjectSolenoid.set(DoubleSolenoid.Value.kForward);
+		}
+		//getRawButtonLatch(5);
+		//value2 = getRawButtonLatch(5);
+		if (value2 == true){
+			value1 = false;
+			ProjectSolenoid.set(DoubleSolenoid.Value.kReverse);
+		}
+	}
 }
