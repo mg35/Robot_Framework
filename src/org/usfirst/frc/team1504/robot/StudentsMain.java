@@ -4,14 +4,9 @@ import org.usfirst.frc.team1504.robot.Update_Semaphore.Updatable;
 
 import edu.wpi.first.wpilibj.DoubleSolenoid;
 
-public class StudentsMain extends Latch_Joystick implements Updatable {
+public class StudentsMain implements Updatable {
 
 	
-	//lol idk what to do with this part
-	public StudentsMain(int port) {
-		super(port);
-		// TODO Auto-generated constructor stub
-	}
 
 	@Override
 	public void semaphore_update() {
@@ -53,9 +48,9 @@ write your thoughts/ideas here.
  
 Hello World! I'm cool - Eric
 I don't know what i'm doing... - Alex
-
 //Questions
  Is there a more explicit example of this code I can look at? - Alex
+ keep it pg 13 people
  */
 
 
